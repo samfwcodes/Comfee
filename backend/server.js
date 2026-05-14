@@ -3,13 +3,15 @@ import coffeeRoutes from './routes/coffee.js'
 import mongoose from 'mongoose'
 import 'dotenv/config'
 import connectDB from './db/connectDB.js';
+import cors from 'cors'
 
 
 const app = express()
-const PORT = 5000
+const PORT = process.env.PORT
 
-app.use(express.json())
-app.use('/api/coffee', coffeeRoutes)
+app.use(cors());
+app.use(express.json());
+app.use('/api/coffee', coffeeRoutes);
 app.use(express.urlencoded({ extended: true }));
 
 
@@ -24,5 +26,5 @@ const start = async () => {
     }
 }
 
-start()
+start();
 

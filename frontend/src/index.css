@@ -1,0 +1,91 @@
+*{
+  color: #f8f8f8;
+  margin: 0;
+  padding: 0;
+}
+body{
+    background-color: #A63934;
+    font-family: 'Integral', sans-serif;
+    overflow-x: hidden;
+}
+
+@font-face {
+  font-family: 'Integral';
+  src: url('./assets/fonts/Fontspring-DEMO-integralcf-bold.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1{
+  font-weight: 700;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+}
+p{
+  font-family: 'Inter', sans-serif;
+  font-weight: 100;
+  text-align: center;
+}
+
+
+.flex{
+  display: flex;
+  align-items:center;
+  justify-content: center;
+}
+.h-style{
+  font-size: 5rem;
+  font-weight: 800;
+  color: #FFBF00;
+  text-shadow: 5px 5px 0px #852520;
+}
+.outer-box{
+  flex-direction: column;
+  justify-content: start;
+  margin-bottom: 80px;
+  align-items: center;
+  margin-top: 80px;
+  flex: 0 0 calc(33.333% - 20px);
+}
+.inner-box{
+  background-color: #852520;
+  width: 250px;
+  height: 250px;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+.img-wrapper {
+  position: relative;
+  width: 150px;
+  height: auto;
+  overflow: hidden;
+  margin-top: -140px;
+}
+
+.img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  filter: drop-shadow(5px 5px 10px rgba(0,0,0,0.5));
+}
+.cta{
+  background-color: #FFBF00;
+  color: #852520;
+  padding: 0.3rem 1rem;
+  border: none;
+  font-weight: 600;
+  font-size: 1rem;
+  position: relative;
+  box-shadow: 8px 8px 0px 0px #852520;
+  margin-top: -13px;
+  filter: drop-shadow(1px 1px 10px rgba(0,0,0,0.3));
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+  text-decoration: none;
+}
+.product-container{
+  width: 100%;
+  flex-wrap: wrap;
+}
