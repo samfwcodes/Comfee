@@ -2,9 +2,9 @@ import Heading from "../components/Heading"
 
 const EditProduct = () => {
   return (
-     <div>
+     <section>
       <Heading text='Edit Coffee' />
-    </div>
+    </section>
   )
 }
 

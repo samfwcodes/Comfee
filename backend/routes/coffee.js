@@ -4,12 +4,14 @@ import {
     addCoffee,
     getCoffee,
     updateCoffee,
-    deleteCoffee
+    deleteCoffee,
+    getOneCoffee
 } from '../controllers/coffeeController.js'
 
 
 router.post('/', addCoffee);
 router.get('/', getCoffee);
+router.get('/:id', getOneCoffee)
 router.patch('/:id', updateCoffee);
 router.delete('/:id', deleteCoffee);
 

@@ -22,6 +22,17 @@ export const getCoffee = async (req, res) => {
     }
 };
 
+export const getOneCoffee = async (req, res) => {
+    try {
+        const { id } = req.params
+        const oneCoffee = await Coffee.findById(id)
+        console.log(oneCoffee)
+        res.status(200).json(oneCoffee)
+    } catch (err) {
+        res.status(500).send('There was an error fetching data. Try Again Later')
+    }
+};
+
 export const updateCoffee = async (req, res) => {
     try {
         const { id } = req.params
